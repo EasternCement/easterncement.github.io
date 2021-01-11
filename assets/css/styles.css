@@ -1,0 +1,63 @@
+.sidebar {
+  width: 6.5rem;
+  min-height: 100vh;
+  margin-top: 0px;
+}
+
+.navbar {
+  position: relative;
+  padding: .5rem 1rem;
+  z-index: 2;
+}
+
+.navbar.navbar-dark.align-items-start.sidebar.sidebar-dark.accordion.bg-gradient-primary.p-0 {
+  z-index: 2;
+}
+
+.logoImage {
+  max-height: 50px;
+}
+
+.appLogo {
+  max-height: 30px;
+}
+
+.img-fluid.banner {
+  margin-bottom: 25px;
+}
+
+.card.mb-3 {
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 350px;
+}
+
+.img-fluid.banner {
+  width: 100%;
+}
+
+.home-card-image {
+  margin-bottom: 10px;
+  max-height: 50%;
+}
+
+.homeCard-icon {
+}
+
+.side-card {
+  max-height: 100px;
+}
+
+.card-button {
+  margin: 10px;
+}
+
+.card > .card-header + .list-group, .card > .list-group + .card-footer {
+  max-height: 275px;
+  overflow: scroll;
+}
+
+.form-check {
+  margin-right: 10px;
+}
+

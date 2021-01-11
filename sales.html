@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EPCCO</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4-.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Cards-v2.css">
+    <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Register-form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="logoImage" src="assets/img/Logos/EPCC_logo.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sales.html">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="procurement.html">Procurement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resourceCenter.html">Resource Center</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><img class="appLogo" src="assets/img/Logos/appLogo.png"></div>
+                    <div class="sidebar-brand-text mx-3"><span>EPCCO</span></div>
+                </a>
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" id="corporateLink"><a class="nav-link" href="#"><i class="fas fa-user" style="color: #4A3112;"></i><span>Corporate Link</span></a></li>
+                    <li class="nav-item" id="yourMobileApp"><a class="nav-link" href="#"><i class="fas fa-user"></i><span>Your Mobile App</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <div class="container-fluid form-container" id="login">
+                    <header>
+                        <h1 class="text-center">Corporate Link</h1><i class="fa fa-star d-none" id="js-dummy"></i>
+                    </header>
+                    <div class="row mh-100vh">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
+                            <div class="m-auto w-lg-75 w-xl-50">
+                                <h2 class="text-info font-weight-light mb-5"><i class="fas fa-angle-double-right"></i>&nbsp;Sign In</h2>
+                                <form>
+                                    <div class="form-group"><label class="text-secondary">Sales Account</label><input class="form-control" type="text" required="" pattern="^[a-zA-Z0-9_.-]*$" minlength="4" maxlength="15"></div>
+                                    <div class="form-group"><label class="text-secondary">Password</label><input class="form-control" type="password" required=""></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label text-info small" for="formCheck-1">Keep me signed in</label></div><button class="btn btn-info mt-2" type="submit">Log In</button>
+                                </form>
+                                <p class="mt-3 mb-0"><a id="signUp" class="text-info small" href="#">Sign Up</a></p>
+                                <p class="mt-3 mb-0"><a id="forgotPassword" class="text-info small" href="#">Forgot your password?</a></p><button class="btn btn-info mt-2" type="submit">Sales Portal</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end" id="bg-block" style="background: url(&quot;assets/img/PROD_1.jpg&quot;) center / cover no-repeat;">
+                            <p class="ml-auto small text-dark mb-2"><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid form-container" id="register">
+                    <header>
+                        <h1 class="text-center">Corporate Link</h1><i class="fa fa-star d-none" id="js-dummy-1"></i>
+                    </header>
+                    <div class="row mh-100vh">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block-2">
+                            <div style="margin: auto;">
+                                <div class="text-center">
+                                    <p class="mt-3 mb-0"><a id="alreadyHave" class="text-info small" href="#">Already have an account? Login!</a></p>
+                                </div>
+                                <form class="rg-form">
+                                    <h2 class="text-info font-weight-light mb-5"><i class="fas fa-angle-double-right"></i>&nbsp;Register</h2>
+                                    <div class="rf-input-container"><i class="fa fa-star fa fa-user rf-icon"></i><input class="form-control rf-input-field" type="text" placeholder="Username"></div>
+                                    <div class="rf-input-container"><i class="fa fa-star fa fa-key rf-icon"></i><input class="form-control rf-input-field" type="password" placeholder="Password"></div>
+                                    <div class="rf-input-container"><i class="fa fa-star fa fa-key rf-icon"></i><input class="form-control rf-input-field" type="password" placeholder="Confirm Password"></div>
+                                    <div class="rf-input-container"><i class="icon-organization fa fa-key rf-icon"></i><input class="form-control" type="text" placeholder="Company Name"></div>
+                                    <div class="rf-input-container"><i class="icon-organization fa fa-key rf-icon"></i><input class="form-control" type="text" placeholder="Company Type"></div>
+                                    <div class="rf-input-container"><i class="fas fa-city fas fa-city rf-icon"></i><input class="form-control" type="text" placeholder="City"></div>
+                                    <div class="rf-input-container"><i class="fas fa-box fas fa-box rf-icon"></i><input class="form-control" type="text" placeholder="P.O Box"></div>
+                                    <div class="rf-input-container"><i class="fas fa-box fas fa-box rf-icon"></i><input class="form-control" type="number" placeholder="Postal Code"></div>
+                                    <div class="rf-input-container"><i class="fas fa-phone fa fa-key rf-icon"></i><input class="form-control" type="tel" placeholder="Phone"></div>
+                                    <div class="rf-input-container"><i class="fas fa-fax fa fa-key rf-icon"></i><input class="form-control" type="tel" placeholder="Fax"></div>
+                                    <div class="rf-input-container"><i class="fas fa-mobile fas fa-mobile rf-icon"></i><input class="form-control" type="tel" placeholder="Mobile"></div>
+                                    <div class="rf-input-container"><i class="fa fa-star fa fa-envelope rf-icon"></i><input class="form-control" type="email" placeholder="Email"></div>
+                                    <h4 class="text-info font-weight-light mb-2">Type of Cement:</h4>
+                                    <div class="rf-input-container">
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Bulk</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-2">Bagged</label></div>
+                                    </div>
+                                    <div class="rf-input-container">
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-2">OPC</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-2">SRC</label></div>
+                                    </div><button class="btn btn-info mt-2" type="submit">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end" id="bg-block-2" style="background: url(&quot;assets/img/PROD_1.jpg&quot;) center / cover no-repeat;">
+                            <p class="ml-auto small text-dark mb-2"><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid form-container" id="forgot">
+                    <header>
+                        <h1 class="text-center">Corporate Link</h1><i class="fa fa-star d-none" id="js-dummy-2"></i>
+                    </header>
+                    <div class="row mh-100vh">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block-1">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h2 class="text-info font-weight-light mb-5"><i class="fas fa-angle-double-right"></i>&nbsp;Forgot Your Password?</h2>
+                                    <p class="mb-4">We get it, stuff happens. Just enter your email address below and we'll send you a link to reset your password!</p>
+                                </div>
+                                <form class="user">
+                                    <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email"></div><button class="btn btn-info mt-2" type="submit">Reset Password</button>
+                                </form>
+                                <div class="text-center">
+                                    <hr>
+                                    <p id="createAcct" class="mt-3 mb-0"><a class="text-info small" href="#">Create an Account!</a></p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="mt-3 mb-0"><a id="alreadyHaveAcct" class="text-info small" href="#">Already have an account? Login!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end" id="bg-block-1" style="background: url(&quot;assets/img/PROD_1.jpg&quot;) center / cover no-repeat;">
+                            <p class="ml-auto small text-dark mb-2"><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="mobile">
+                    <header>
+                        <h1 class="text-center">Your Mobile App</h1><i class="fa fa-star d-none" id="js-dummy-3"></i>
+                    </header>
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="card text-left shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h5 class="text-primary m-0 font-weight-bold"><a id="privacyPolicy" class="text-info small">Privacy Policy</a></h5>
+                                </div>
+                                <div class="card-header py-3">
+                                    <h5 class="text-primary m-0 font-weight-bold"><a id="userGuide" class="text-info small">User Guide</a></h5>
+                                </div>
+                                <div class="card-header py-3">
+                                    <h5 class="text-primary m-0 font-weight-bold"><a class="text-info small" href="https://play.google.com/store/apps/details?id=com.RostanTechnologies.EPCCO" target="_blank">Google PlayStore</a></h5>
+                                </div>
+                                <div class="card-body text-center"><a class="card-link"><img class="rounded img-fluid" src="assets/img/mobileApp.png" style="width: 90%;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="privacy-p">
+                    <h1 class="text-center">Your Mobile App</h1>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="text-primary m-0 font-weight-bold"><a id="back1" class="text-info small" href="#" style="font-size: 20px;"><i class="fas fa-angle-double-left"></i>&nbsp;Back</a></h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-left">
+                                    <div class="text-left">
+                                        <p class="mt-3 mb-0"></p>
+                                    </div>
+                                    <h4><strong>Privacy Policy</strong><br></h4>
+                                    <p>EPCCO built the&nbsp;<strong>EPCCO app</strong>&nbsp;as [open source/free/freemium/ad-supported/commercial] app. This SERVICE is provided by EPCCO at no cost and is intended for use as is.</p>
+                                    <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
+                                    <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+                                    <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at EPCCO unless otherwise defined in this Privacy Policy.</p>
+                                    <h4><strong>Information Collection and Use</strong><br></h4>
+                                    <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Name, Organization name, Mobile number. The information that we request will be retained by us and used as described in this privacy policy.</p>
+                                    <p>The app does use third party services that may collect information used to identify you.<br></p>
+                                    <p>Link to privacy policy of third party service providers used by the app<br></p>
+                                    <ul>
+                                        <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+                                    </ul>
+                                    <h4><strong>Log Data</strong><br></h4>
+                                    <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.<br></p>
+                                    <h4><strong>Cookies</strong><br></h4>
+                                    <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.<br></p>
+                                    <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.<br></p>
+                                    <h4><strong>Service Providers</strong><br></h4>
+                                    <p>We may employ third-party companies and individuals due to the following reasons:<br></p>
+                                    <ul>
+                                        <li>To facilitate our Service;<br></li>
+                                        <li>To provide the Service on our behalf;<br></li>
+                                        <li>To perform Service-related services; or<br></li>
+                                        <li>To assist us in analyzing how our Service is used.<br></li>
+                                    </ul>
+                                    <p>We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.<br></p>
+                                    <h4><strong>Security</strong><br></h4>
+                                    <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.<br></p>
+                                    <h4><strong>Links to Other Sites</strong><br></h4>
+                                    <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.<br></p>
+                                    <h4><strong>Children’s Privacy</strong><br></h4>
+                                    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.<br></p>
+                                    <h4><strong>Changes to This Privacy Policy</strong><br></h4>
+                                    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.<br></p>
+                                    <p>This policy is effective as of 2020-10-07<br></p>
+                                    <h4><strong>Contact Us</strong><br></h4>
+                                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at easterncementsa@gmail.com<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="guide">
+                    <h1 class="text-center">Your Mobile App</h1>
+                    <section>
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="text-primary m-0 font-weight-bold"><a id="back2" class="text-info small" href="#" style="font-size: 20px;"><i class="fas fa-angle-double-left"></i>&nbsp;Back</a></h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-1" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">1</span>
+                                        <div class="p-5">
+                                            <div class="row text-center justify-content-center" id="logo-row">
+                                                <div class="col"><img class="img-thumbnail" src="assets/img/UserGuide/Picture1.png" width="60%"></div>
+                                            </div>
+                                            <h3>OUM<br>DO.070 User Guide EPCCo Customer Mobile Sales Application<br></h3>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr></tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">Author</td>
+                                                            <td>Sambasiva</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">Creation Date</td>
+                                                            <td>Aug 19, 2020&nbsp; &nbsp;&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">Last updated</td>
+                                                            <td>Nov 10, 2020</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">Document Ref</td>
+                                                            <td>&lt; CMSA DO.070 User Guide&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">Version</td>
+                                                            <td>&nbsp;Version 1.0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Approvals</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(21,128,235);">Approver 1</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: rgb(21,128,235);">Approver 2</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">2</span>
+                                        <div class="p-5">
+                                            <h2>Document Control</h2>
+                                            <h3>Change Record</h3>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;font-size: 10px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Author</th>
+                                                            <th>Version</th>
+                                                            <th>Change Reference</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">19-Aug-20<br></td>
+                                                            <td style="color: rgb(21,128,235);">&lt;Sambasiva&gt;<br></td>
+                                                            <td>1.0<br></td>
+                                                            <td>No<br> Previous Document<br></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3>Reviewers</h3>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(21,128,235);">&lt;Ramil&gt;</td>
+                                                            <td>IT Manager (A)<br></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3>Link to Download Application</h3>
+                                            <div class="table-responsive" style="border-radius: 15px;margin-bottom: 16px;border-width: 1px;border-style: none;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr></tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style="text-align: center;">
+                                                            <td style="color: rgb(21,128,235);border-top-style: none;"><a href="https://play.google.com/store/apps/details?id=com.RostanTechnologies.EPCCO" target="_blank"><img class="img-thumbnail" src="assets/img/UserGuide/googlePlayImage.png" width="60%" style="border-style: none;border-top-style: none;"></a></td>
+                                                        </tr>
+                                                        <tr style="text-align: center;">
+                                                            <td style="color: rgb(21,128,235);border-top-style: none;"><a target="_blank" href="https://www.epcco.com.sa/P/mobile_app_privacy_policy/94#.X31V0GgzaUk">
+                                                                    <p>Mobile App Privacy Policy</p>
+                                                                </a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-1" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">3</span>
+                                        <div class="p-5">
+                                            <h3>Preface</h3>
+                                            <p>This document is used to guide all the customer users of mobile sales application how to use functions as mentioned below.<br></p>
+                                            <h6>Topics discussed are:</h6>
+                                            <ul>
+                                                <li>Introduction to Mobile App<br></li>
+                                                <li>Objectives &amp; Benefits</li>
+                                                <li>Current Ordering process flow</li>
+                                                <li>Mobile App Add-on Steps to current process flow</li>
+                                                <li>Download &amp; Install Mobile App<br></li>
+                                                <li>Mobile User Registration</li>
+                                                <li>Change Password</li>
+                                                <li>Login as Registered User to Mobile App</li>
+                                                <li>Create Order</li>
+                                                <li>View credit balance</li>
+                                                <li>Submit Sales Order from Mobile App</li>
+                                                <li>Print PDF Order</li>
+                                                <li>Dashboard Features</li>
+                                                <li>Cancel Order</li>
+                                                <li>Shipped Orders</li>
+                                                <li>Print Delivery Note</li>
+                                                <li>View Invoice/s</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">4</span>
+                                        <div class="p-5">
+                                            <h2>Document Control</h2>
+                                            <h3>Change Record</h3>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;font-size: 10px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Author</th>
+                                                            <th>Version</th>
+                                                            <th>Change Reference</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(0,0,0);">19-Aug-20<br></td>
+                                                            <td style="color: rgb(21,128,235);">&lt;Sambasiva&gt;<br></td>
+                                                            <td>1.0<br></td>
+                                                            <td>No<br> Previous Document<br></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3>Reviewers</h3>
+                                            <div class="table-responsive" style="border-width: 1px;border-style: solid;border-radius: 15px;margin-bottom: 16px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="color: rgb(21,128,235);">&lt;Ramil&gt;</td>
+                                                            <td>IT Manager (A)<br></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-1" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">5</span>
+                                        <div class="p-5">
+                                            <h3>Introduction</h3>
+                                            <p>Mobile App is about cement ordering by customer via Mobile App provided by EPCCo. This process is meant to facilitate customer to create an order from a mobile using an App and carry the Barcode/QR code or printed order for further activities of sales booking, cement loading and delivery note printing. <br><br>Mobile App is collaborated with E-Business Suite Applications of Eastern Cement Province Company's Oracle ERP system.<br><br>Mobile App is also meant to collaborate Plant Entry &amp; Exit system of trucks that arrive for cement loading.<br><br>Currently the App is available for android mobile users.<br></p>
+                                            <h6>Objectives:</h6>
+                                            <ul>
+                                                <li>&nbsp;Go Electronic – Replace Customer Sales orders of print format with electronic/digital format<br></li>
+                                                <li>&nbsp;Improve Sales performance by speeding up the ordering<br>process<br></li>
+                                                <li>&nbsp;&nbsp;Facilitates Customers to create order from anywhere i.e.<br>even when away from booking office <br></li>
+                                            </ul>
+                                            <h6>Benefits:</h6>
+                                            <ul>
+                                                <li>Replace Print formats with Electronic/Digital formats&nbsp;<br></li>
+                                                <li>Customers can self-order<br></li>
+                                                <li>Customer can view electronic Delivery Note&nbsp; &amp; Invoice on his mobile<br></li>
+                                                <li>Customer's &nbsp;engaged time per order is reduced<br></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">6</span>
+                                        <div class="p-5">
+                                            <h2>Current Ordering Process Flow</h2><img src="assets/img/UserGuide/Picture2.png" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-1" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">7</span>
+                                        <div class="p-5">
+                                            <h3>Mobile App Add-on Steps to current Order Flow</h3>
+                                            <h4>- Highlighted</h4><img src="assets/img/UserGuide/Picture3.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">8</span>
+                                        <div class="p-5">
+                                            <h4>Login to Mobile App:</h4>
+                                            <div class="table-responsive" style="font-size: 10px;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Customer Login</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Customer<br></td>
+                                                            <td>AL RASHED CEMENT COMPANY<br></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Navigation<br></td>
+                                                            <td>Open App &amp; provide Login credentials as registered<br></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mobile User Name<br></td>
+                                                            <td>xxxxxxxxx ( 9-digit mobile number)<br></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Password<br></td>
+                                                            <td>xxxx ( 4-digit password)<br></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><img src="assets/img/UserGuide/Picture4.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">9</span>
+                                        <div class="p-5">
+                                            <h6>Screen after Customer Login</h6>
+                                            <h4>Dashboard View</h4><img src="assets/img/UserGuide/Picture5.png" width="80%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">10</span>
+                                        <div class="p-5">
+                                            <h4>Dashboard View with Order Count</h4>
+                                            <div class="row" id="images-row-1">
+                                                <div class="col">
+                                                    <h5 class="text-center">Yesterday</h5><img src="assets/img/UserGuide/Picture6.png" width="100%">
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="text-center">Today</h5><img src="assets/img/UserGuide/Picture7.png" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">11</span>
+                                        <div class="align-items-start p-5">
+                                            <h4 class="align-items-start">Download EPCCO App from Android Playstore</h4>
+                                            <div class="row" id="images-row-2">
+                                                <div class="col"><img src="assets/img/UserGuide/Picture8.png" width="100%"></div>
+                                                <div class="col"><img src="assets/img/UserGuide/Picture9.png" width="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">12</span>
+                                        <div class="align-items-start p-5">
+                                            <h4 class="align-items-start">Register as EPCCO App User</h4><img class="align-items-start" src="assets/img/UserGuide/Picture10.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">13</span>
+                                        <div class="align-items-start p-5">
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">Enter UserName and Email ( Registered with EPCCo<br></li>
+                                                <li class="align-items-start">Submit</li>
+                                            </ul><img class="align-items-start" src="assets/img/UserGuide/Picture11.png" width="80%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">14</span>
+                                        <div class="align-items-start p-5">
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">OTP is received in email</li>
+                                            </ul>
+                                            <div class="col text-center" id="images-col">
+                                                <div class="row justify-content-center"><img class="align-items-start" src="assets/img/UserGuide/Picture12.png" height="270px"></div>
+                                                <div class="row justify-content-center"><img class="align-items-start" src="assets/img/UserGuide/Picture13.png" height="270px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">15</span>
+                                        <div class="align-items-start p-5">
+                                            <h4 class="align-items-start">Change Password</h4>
+                                            <div class="row" id="images-row-3">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Go to Profile -&gt; Change Password<br></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>Enter Current Password<br></li>
+                                                        <li>Enter New Password<br></li>
+                                                        <li>Re-type new Password and submit<br></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="images-row-4">
+                                                <div class="col"><img src="assets/img/UserGuide/Picture14.png" width="100%"></div>
+                                                <div class="col"><img src="assets/img/UserGuide/Picture15.png" width="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">16</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Login to YourCement</h5>
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">Enter mobile number</li>
+                                                <li class="align-items-start">Enter Password</li>
+                                                <li class="align-items-start">Select Language</li>
+                                                <li class="align-items-start">Click 'Login'</li>
+                                            </ul><img class="align-items-start" src="assets/img/UserGuide/Picture16.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">17</span>
+                                        <div class="align-items-start p-5">
+                                            <h4 class="align-items-start">Create Order</h4>
+                                            <p class="align-items-start">Navigation: Dashboard -&gt; Total Orders -&gt; + icon</p><img class="align-items-start" src="assets/img/UserGuide/Picture17.png" width="80%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">18</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Enter mandatory information on Sales Order</h5>
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">Order type</li>
+                                                <li class="align-items-start">Shipping to location</li>
+                                                <li class="align-items-start">Driver Name</li>
+                                                <li class="align-items-start">Truck No.</li>
+                                                <li class="align-items-start">Type</li>
+                                                <li class="align-items-start">Select Product and enter Quantity</li>
+                                                <li class="align-items-start">Click <strong>Submit</strong></li>
+                                            </ul>
+                                            <div class="row" id="images-row-5">
+                                                <div class="col"><img src="assets/img/UserGuide/Picture18.png" width="100%"></div>
+                                                <div class="col"><img src="assets/img/UserGuide/Picture19.png" width="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">19</span>
+                                        <div class="align-items-start p-5">
+                                            <div class="row" id="images-row-6">
+                                                <div class="col">
+                                                    <h6 class="text-center">Order Created from Mobile<br></h6><img src="assets/img/UserGuide/Picture20.png" width="100%">
+                                                </div>
+                                                <div class="col">
+                                                    <h6 class="text-center">Order@Dashboard view<br></h6><img src="assets/img/UserGuide/Picture21.png" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">20</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Customer Balance view before Order submission</h5><img class="align-items-start" src="assets/img/UserGuide/Picture22.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">21</span>
+                                        <div class="align-items-start p-5">
+                                            <div class="row" id="images-row-7">
+                                                <div class="col">
+                                                    <h5 class="text-center"><span style="text-decoration: underline;">Barcode is generated</span> that can&nbsp;be carried to Sales Office<br></h5><img src="assets/img/UserGuide/Picture23.png" width="100%">
+                                                </div>
+                                                <div class="col align-self-end">
+                                                    <h5 class="text-center"><br><span style="text-decoration: underline;">Printed Order </span><br><br></h5><img src="assets/img/UserGuide/Picture24.png" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">22</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Sales Team receives e-mail Notification</h5>
+                                            <p class="align-items-start">Sales Team receives e-mail notification for each order when created from the Mobile App. This feature is useful when Oracle is not available to read order<strong> Qty </strong><br></p><img class="align-items-start" src="assets/img/UserGuide/Picture25.png" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">23</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Loading Area</h5>
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">Barcode to be presented @ Silo Loading Area<br></li>
+                                                <li class="align-items-start">Cement Loaded as per Order Qty<br></li>
+                                            </ul>
+                                            <div class="row" id="images-row-8">
+                                                <div class="col">
+                                                    <h6 class="text-center">Net Order Qty : 30 Ton<br><br>&nbsp; Truck 1st weight (Empty)<br></h6><img src="assets/img/UserGuide/Picture26.png" width="100%">
+                                                </div>
+                                                <div class="col">
+                                                    <h6 class="text-center"><br>Truck 2nd weight (Loaded)<br></h6><img src="assets/img/UserGuide/Picture27.png" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-items-start order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">24</span>
+                                        <div class="align-items-start p-5">
+                                            <h5 class="align-items-start">Delivery Note</h5>
+                                            <ul class="align-items-start">
+                                                <li class="align-items-start">Barcode to be presented @ Weigh bridge &nbsp;&nbsp;<br></li>
+                                                <li class="align-items-start">Weigh bridge reads Truck empty weight and loaded weight and&nbsp;Net Qty applied in ERP. <br></li>
+                                                <li class="align-items-start">Order is shipped.<br></li>
+                                                <li class="align-items-start">View Delivery Note on mobile<br></li>
+                                            </ul><img class="align-items-start" src="assets/img/UserGuide/Picture28.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="border-style: none;border-top: 1px solid rgb(0,0,0) ;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">25</span>
+                                        <div class="p-5">
+                                            <h5>Invoice Tab</h5><img src="assets/img/UserGuide/Picture29.png" width="80%">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-lg-2" style="border-style: none;border-top: 2px none rgb(0,0,0) ;border-bottom: 2px none rgb(0,0,0) ;"><span class="badge badge-primary" style="background: rgb(0,0,0);">26</span>
+                                        <div class="p-5">
+                                            <h5>View Invoice/Order</h5><img src="assets/img/UserGuide/Picture30.png" width="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2020</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/aboutPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/procurementPage.js"></script>
+    <script src="assets/js/resourcePage.js"></script>
+    <script src="assets/js/salesPage.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
