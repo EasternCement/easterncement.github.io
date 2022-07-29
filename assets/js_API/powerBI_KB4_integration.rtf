@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red30\green32\blue40;\red178\green24\blue137;
+\red65\green182\blue69;\red120\green109\blue196;\red219\green44\blue56;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c11800\c12500\c15700;\csgenericrgb\c69800\c9500\c53600;
+\csgenericrgb\c25500\c71400\c27000;\csgenericrgb\c46900\c42600\c77000;\csgenericrgb\c85900\c17100\c21900;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3     \cf4 let\cf2 \
+        \cf5 //This will return up to 5000 users. Change the 2nd arguement in List.Numbers to query more or less users.\cf2 \
+        Source = List.Numbers(\cf6 1\cf2 ,\cf6 10\cf2 ,\cf6 1\cf2 ),\
+        #\cf7 "Converted to Table"\cf2  = Table.FromList(Source, Splitter.SplitByNothing(), \cf4 null\cf2 , \cf4 null\cf2 , ExtraValues.Error),\
+        #\cf7 "Changed Type"\cf2  = Table.TransformColumnTypes(#\cf7 "Converted to Table"\cf2 ,\{\{\cf7 "Column1"\cf2 , type text\}\}),\
+        #\cf7 "Added Custom"\cf2  = Table.AddColumn(#\cf7 "Changed Type"\cf2 , \cf7 "Custom"\cf2 , each\
+            Json.Document(\
+                Web.Contents(\
+                    \cf7 "https://us.api.knowbe4.com/v1"\cf2 ,\
+                    [\
+                        RelativePath= \cf7 "users?page="\cf2 & [Column1] & \cf7 "per_page=500"\cf2 ,\
+                        Headers=[Authorization=\cf7 "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhaWQiOjI2MDAyLCJpYXQiOjE1ODYzNTEzMjJ9.4Fv2q4Vthl_FJawGN6CAsy8se9P5aHnUcWBCuNnNtqs"\cf2 ]\
+                    ]\
+                )\
+            )\
+        ),\
+        #\cf7 "Expanded Custom"\cf2  = Table.ExpandListColumn(#\cf7 "Added Custom"\cf2 , \cf7 "Custom"\cf2 ),\
+        #\cf7 "Expanded Custom1"\cf2  = Table.ExpandRecordColumn(#\cf7 "Expanded Custom"\cf2 , \cf7 "Custom"\cf2 , \{\cf7 "id"\cf2 , \cf7 "employee_number"\cf2 , \cf7 "first_name"\cf2 , \cf7 "last_name"\cf2 , \cf7 "job_title"\cf2 , \cf7 "email"\cf2 , \cf7 "phish_prone_percentage"\cf2 , \cf7 "phone_number"\cf2 , \cf7 "extension"\cf2 , \cf7 "mobile_phone_number"\cf2 , \cf7 "location"\cf2 , \cf7 "division"\cf2 , \cf7 "manager_name"\cf2 , \cf7 "manager_email"\cf2 , \cf7 "provisioning_managed"\cf2 , \cf7 "provisioning_guid"\cf2 , \cf7 "groups"\cf2 , \cf7 "current_risk_score"\cf2 , \cf7 "aliases"\cf2 , \cf7 "joined_on"\cf2 , \cf7 "last_sign_in"\cf2 , \cf7 "status"\cf2 , \cf7 "organization"\cf2 , \cf7 "department"\cf2 , \cf7 "language"\cf2 , \cf7 "comment"\cf2 , \cf7 "employee_start_date"\cf2 , \cf7 "archived_at"\cf2 , \cf7 "custom_field_1"\cf2 , \cf7 "custom_field_2"\cf2 , \cf7 "custom_field_3"\cf2 , \cf7 "custom_field_4"\cf2 , \cf7 "custom_date_1"\cf2 , \cf7 "custom_date_2"\cf2 \}, \{\cf7 "id"\cf2 , \cf7 "employee_number"\cf2 , \cf7 "first_name"\cf2 , \cf7 "last_name"\cf2 , \cf7 "job_title"\cf2 , \cf7 "email"\cf2 , \cf7 "phish_prone_percentage"\cf2 , \cf7 "phone_number"\cf2 , \cf7 "extension"\cf2 , \cf7 "mobile_phone_number"\cf2 , \cf7 "location"\cf2 , \cf7 "division"\cf2 , \cf7 "manager_name"\cf2 , \cf7 "manager_email"\cf2 , \cf7 "provisioning_managed"\cf2 , \cf7 "provisioning_guid"\cf2 , \cf7 "groups"\cf2 , \cf7 "current_risk_score"\cf2 , \cf7 "aliases"\cf2 , \cf7 "joined_on"\cf2 , \cf7 "last_sign_in"\cf2 , \cf7 "status"\cf2 , \cf7 "organization"\cf2 , \cf7 "department"\cf2 , \cf7 "language"\cf2 , \cf7 "comment"\cf2 , \cf7 "employee_start_date"\cf2 , \cf7 "archived_at"\cf2 , \cf7 "custom_field_1"\cf2 , \cf7 "custom_field_2"\cf2 , \cf7 "custom_field_3"\cf2 , \cf7 "custom_field_4"\cf2 , \cf7 "custom_date_1"\cf2 , \cf7 "custom_date_2"\cf2 \}),\
+        #\cf7 "Sorted Rows"\cf2  = Table.Sort(#\cf7 "Expanded Custom1"\cf2 ,\{\{\cf7 "Column1"\cf2 , Order.Descending\}\}),\
+        #\cf7 "Filtered Rows"\cf2  = Table.SelectRows(#\cf7 "Sorted Rows"\cf2 , each [id] <> \cf4 null\cf2  and [id] <> \cf7 ""\cf2 ),\
+        #\cf7 "Removed Columns"\cf2  = Table.RemoveColumns(#\cf7 "Filtered Rows"\cf2 ,\{\cf7 "Column1"\cf2 \})\
+    \cf4 in\cf2 \
+        #\cf7 "Removed Columns"\cf2 \
+    }
