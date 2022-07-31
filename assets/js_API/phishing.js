@@ -1,4 +1,5 @@
 var myData = []
+var token = ""
 
 function myFunction() {
 	var xhttp = new XMLHttpRequest();
@@ -20,7 +21,7 @@ function myFunction() {
 		}
 	};
 	xhttp.open("GET", "https://eu.api.knowbe4.com/v1/phishing/security_tests", true);
-	xhttp.setRequestHeader('Authorization', "Bearer " + "eyJhbGciOiJIUzI1NiJ9.eyJhaWQiOjI2MDAyLCJpYXQiOjE1ODYzNTEzMjJ9.4Fv2q4Vthl_FJawGN6CAsy8se9P5aHnUcWBCuNnNtqs");
+	xhttp.setRequestHeader('Authorization', "Bearer " + token);
 	xhttp.send();
 }
 
