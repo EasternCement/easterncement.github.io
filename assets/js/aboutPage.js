@@ -66,9 +66,23 @@ for (i = 0; i < myObjects.length; i++) {
     };
 }
 $(document).ready(function(){
-  if(window.location.hash == "#achievements"){
+  if(window.location.hash == "#AboutCompany"){
     document.getElementById("achievements").click();
-  } else if(window.location.hash == "#missionStatement"){
+  } else if(window.location.hash == "#MissionStatement"){
     document.getElementById("missionStatement").click();
+  } else if(window.location.hash == "#BoardMembers"){
+    document.getElementById("boardMembers").click();
+  } else if(window.location.hash == "#ExecutiveManagement"){
+    document.getElementById("executiveManagement").click();
+  } else if(window.location.hash == "#Achievements"){
+    document.getElementById("achievements").click();
+  } else if(window.location.hash == "#QualityPolicy"){
+    document.getElementById("qualityPolicy").click();
+  } else if(window.location.hash == "#TrainingCenter"){
+    document.getElementById("trainingCenter").click();
+  } else if(window.location.hash == "#ProcurementTerms"){
+    document.getElementById("procurementTerms").click();
+  } else if(window.location.hash == "#OurBankDetails"){
+    document.getElementById("ourBankDetails").click();
   }
 });

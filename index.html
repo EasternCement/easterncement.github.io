@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bowlby+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/Bootstrap-Cards-v2.css">
     <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---3-Profile.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
     <link rel="stylesheet" href="assets/css/Register-form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -29,7 +30,7 @@
     <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="logoImage" src="assets/img/Logos/EPCC_logo.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
@@ -46,13 +47,13 @@
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" id="search" placeholder="Search for ..." required="">
+                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" id="searchForm" action="search.html">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" id="searchField" placeholder="Search for ..." required="">
                                 <div class="input-group-append"><button class="btn btn-primary py-0" id="searchBtn" type="submit"><i class="fas fa-search"></i></button></div>
                             </div>
                         </form>
-                        <ul class="nav navbar-nav flex-nowrap ml-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                        <ul class="navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
                                     <form class="form-inline mr-auto navbar-search w-100">
                                         <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
@@ -62,6 +63,9 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="col"><span style="color: var(--danger);font-weight: bold;font-style: italic;">Disclaimer: This website is a prototype and is not the official page for the organization&nbsp;</span></div>
+                        </div>
                     </div>
                 </nav>
                 <section id="carousel">
@@ -210,7 +214,7 @@
                         <div class="col">
                             <div class="row mb-3">
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="card shadow mb-4" data-bs-hover-animate="pulse">
+                                    <div class="card shadow mb-4" data-bss-hover-animate="pulse">
                                         <div class="card-header d-flex justify-content-between align-items-center">
                                             <h6 class="text-secondary font-weight-bold m-0">Tadawul Website</h6>
                                         </div>
@@ -225,12 +229,12 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="card shadow mb-4" data-bs-hover-animate="pulse">
+                                    <div class="card shadow mb-4" data-bss-hover-animate="pulse">
                                         <div class="card-header d-flex justify-content-between align-items-center">
                                             <h6 class="text-secondary font-weight-bold m-0">Quality Assurance</h6>
                                         </div>
                                         <div class="card-body">
-                                            <section><a href="aboutUs.html#achievements">
+                                            <section><a href="aboutUs.html#Achievements">
                                                     <div class="photo-card">
                                                         <div class="photo-background-1" style="background: url(&quot;assets/img/HomePageCards/iso2015.png&quot;) center / contain no-repeat, var(--cyan);"></div>
                                                         <div class="d-flex justify-content-center align-items-center align-content-center photo-details-1"><button class="btn btn-primary pulse animated infinite card-button" type="button"><i class="fas fa-location-arrow"></i></button></div>
@@ -242,7 +246,7 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="card shadow mb-4" data-bs-hover-animate="pulse">
+                                    <div class="card shadow mb-4" data-bss-hover-animate="pulse">
                                         <div class="card-header d-flex justify-content-between align-items-center">
                                             <h6 class="text-secondary font-weight-bold m-0">Shareholder Certificate Form</h6>
                                         </div>
@@ -257,12 +261,12 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <div class="card shadow mb-4" data-bs-hover-animate="pulse">
+                                    <div class="card shadow mb-4" data-bss-hover-animate="pulse">
                                         <div class="card-header d-flex justify-content-between align-items-center">
                                             <h6 class="text-secondary font-weight-bold m-0">Mission Statement</h6>
                                         </div>
                                         <div class="card-body">
-                                            <section><a href="aboutUs.html#missionStatement">
+                                            <section><a href="aboutUs.html#MissionStatement">
                                                     <div class="photo-card">
                                                         <div class="photo-background-1" style="background: url(&quot;assets/img/HomePageCards/mission.jpg&quot;) center / contain no-repeat, var(--white);"></div>
                                                         <div class="d-flex justify-content-center align-items-center align-content-center photo-details-1"><button class="btn btn-primary pulse animated infinite card-button" type="button"><i class="fas fa-location-arrow"></i></button></div>
@@ -337,7 +341,7 @@
                                             </li>
                                             <li class="list-group-item">
                                                 <div class="row align-items-center no-gutters">
-                                                    <div class="col mr-2"><a href="resourceCenter.html#vat">
+                                                    <div class="col mr-2"><a href="resourceCenter.html#VatCertificate">
                                                             <h6 class="mb-0"><strong>VAT Certificate is now available under Resource Center section</strong><br></h6>
                                                         </a></div>
                                                 </div>

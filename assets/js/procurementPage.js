@@ -30,3 +30,11 @@ for (i = 0; i < myObjects_3.length; i++) {
         }
     };
 } 
+
+$(document).ready(function(){
+  if(window.location.hash == "#iSuppliers"){
+    document.getElementById("iSuppliers").click();
+  } else if(window.location.hash == "#Suppliers"){
+    document.getElementById("suppliers").click();
+  }
+});

@@ -107,3 +107,11 @@ for (i = 0; i < buttons_1.length; i++) {
   };
 
 }
+
+$(document).ready(function(){
+  if(window.location.hash == "#CorporateLink"){
+    document.getElementById("corporateLink").click();
+  } else if(window.location.hash == "#YourMobileApp"){
+    document.getElementById("yourMobileApp").click();
+  }
+});

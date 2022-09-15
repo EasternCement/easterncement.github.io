@@ -57,7 +57,19 @@ for (i = 0; i < myObjects_2.length; i++) {
 }
 
 $(document).ready(function(){
-  if(window.location.hash == "#vat"){
+  if(window.location.hash == "#PhotoGallery"){
+    document.getElementById("photoGallery").click();
+  } else if(window.location.hash == "#GeneralDownloads"){
+    document.getElementById("generalDownloads").click();
+  } else if(window.location.hash == "#FinancialStatements"){
+    document.getElementById("financialStatements").click();
+  } else if(window.location.hash == "#VATCertificate"){
     document.getElementById("vatCertificate").click();
+  } else if(window.location.hash == "#EPCCOBylaws"){
+    document.getElementById("epccoBylaws").click();
+  } else if(window.location.hash == "#EmployeesLinks"){
+    document.getElementById("employeesLinks").click();
+  } else if(window.location.hash == "#ShareholderCertificate"){
+    document.getElementById("shareholderCertificate").click();
   }
 });
